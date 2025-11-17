@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registro de Astronomía</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Registro de Astronomia</h1>
+
+        <nav>
+            <h3>Ir a la sección:</h3>
+            <a href="#ej1">1.Brillo</a>
+            <a href="#ej2">2.Distancias</a>
+            <a href="#ej3">3.Cráteres</a>
+            <a href="#ej4">4.Cuerpo</a>
+            <a href="#ej5">5.Lux</a>
+        </nav>
+        <hr>
+
+        <div id="ej1">
+            <h2>1. Clasificación de Brillo Estelar</h2>
+            <p>Ingresa la magnitud aparente de un objeto:</p>
+            <input type="number" id="ej1-magnitud" placeholder="ingrese la magnitud">
+            <button onclick="ejercicio1()">Clasificar</button>
+            <p><strong>Resultado:</strong> <span id="ej1-resultado"></span></p>
+        </div>
+        <hr>
+
+        <div id="ej2">
+            <h2>2. Registro de Distancias</h2>
+            <p>Ingresa las distancias en millones de km, separadas por comas:</p>
+            <input type="text" id="ej2-distancias" placeholder="108.2, 149.6, 227.9">
+            <button onclick="ejercicio2()">Calcular Promedio</button>
+            <p><strong>Resultado:</strong> <span id="ej2-resultado"></span></p>
+        </div>
+        <hr>
+
+        <div id="ej3">
+            <h2>3. Conteo de Cráteres Lunares</h2>
+            <p>Ingresa un diámetro en km o escriba 0 para terminar y contar.</p>
+            <input type="number" id="ej3-diametro" placeholder="60 o 0">
+            <button onclick="ejercicio3()">Agregar / Contar</button>
+            <p>Valores agregados: <span id="ej3-lista">Ninguno</span></p>
+            <p><strong>Resultado:</strong> <span id="ej3-resultado"></span></p>
+        </div>
+        <hr>
+
+        <div id="ej4">
+            <h2>4. Identificar Cuerpo Celeste</h2>
+            <p>Ingresa un código (1-5):</p>
+            <input type="number" id="ej4-codigo" placeholder="1">
+            <button onclick="ejercicio4()">Identificar</button>
+            <p><strong>Resultado:</strong> <span id="ej4-resultado"></span></p>
+        </div>
+        <hr>
+
+        <div id="ej5">
+            <h2>5. Registro de Niveles de Lux</h2>
+            <p>Ingresa un valor de lux o escribe "no" para terminar.</p>
+            <input type="text" id="ej5-lux" placeholder="escriba un numero o (no)">
+            <button onclick="ejercicio5()">Registrar / Finalizar</button>
+            <p>Registro: <span id="ej5-feedback"></span></p>
+            <p><strong>Resultado:</strong> <span id="ej5-resultado"></span></p>
+        </div>
+
+    </div> <script src="script.js"></script>
+
+</body>
+</html>
